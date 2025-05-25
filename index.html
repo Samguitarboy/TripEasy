@@ -7,78 +7,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero 區塊 -->
-  <section id="hexo" class="sections">
-    <div class="container">
-      <!-- 左側圖片 -->
-      <div class="side-images">
-          <img src="image-index/header/icon-star.png" alt="icon-star" class="header1-star">
-          <img src="image-index/header/icon-map.png" alt="icon-map" class="header1-map">
-          <img src="image-index/header/img-view1.jpg" alt="view1" class="marginview">
-          <img src="image-index/header/img-view2.jpg" alt="view2" >
-          <img src="image-index/header/img-view3.jpg" alt="view3" class="marginview">
-          <img src="image-index/header/img-view4.jpg" alt="view4" >
-      </div>
-
-      <!-- 中央插圖 -->
-      <div class="main-illustration">
-        <img src="image-index/header/img-transparent.png" alt="旅人插圖" />
-      </div>
-
-      <!-- 右側標語 -->
-      <div class="slogan">
-        <div class="text">
-          <p>讓旅行更輕鬆<br>&emsp;讓世界更近！</p>
-        </div>
-        <div class="icons">
-          <button class="btn-dark"><img src="image-index/header/icon-TW.png" alt="台灣" /></button>
-          <button class="btn"><img src="image-index/header/icon-World.png" alt="世界" /></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- 開始旅行 -->
-    <div class="centralize">
-      <p>開始旅行</p>
-      <span class="next-section" onclick="scrollToSection('features')"><img src="image-index/header/icon-down.png" alt="arrow-down"></span>
-    </div>
-  </section>
-
-  <!-- 功能區塊 -->
-  <section id="features" class="sections">
-    <h2>矚目功能</h2>
-    <div class="feature-cards">
-      <div class="card">
-        <h3>旅遊探索和即時預訂</h3>
-        <img src="image-index/section1/img-map.png" alt="introduce-map">
-        <p>想去世界的某個角落？我們提供精選旅遊行程，依據地點、價格、興趣快速篩選，發掘當地隱藏玩法！即將開賣的行程不再錯過，還能及時掌握優惠</p>
-      </div>
-      <div class="card">
-        <h3>個人化會員體驗</h3>
-        <img src="image-index/section1/img-vip.png" alt="introduce-vip">
-        <p>註冊成為會員，追蹤旅遊積分、VIP等級，累積專屬優惠！收藏你感興趣的旅程，設定價格追蹤，當行程降價或有新優惠，我們及時通知，讓你的旅行更划算、更自由！</p>
-      </div>
-      <div class="card">
-        <h3>安心支付</h3>
-        <img src="image-index/section1/img-pay.png" alt="introduce-pay">
-        <p>選擇你的旅遊項目，透過信用卡、Apple Pay、Google Pay等安全支付結帳，支援促銷折扣與點數兌換！</p>
-      </div>
-    </div>
-    <div class="centralize">
-      <span class="next-section" onclick="scrollToSection('shop')"><img src="image-index/header/icon-down.png" alt="arrow-down"></span>
-    </div>
-  </section>
-  
-    <!-- 購物專區 -->
-  <section id="shop" class="sections">
-    <h2>購物專區</h2>
-    <div class="shopping-main">
-        <div class="shopping-content">
-          <div class="title-main">
-            <button>旅行團</button>
-            <button>背包客</button>
+  <div class="style">
+    <div class="header-main">
+      <div class="header1">
+        <div class="header1-content">
+          <div class="header1-views">
+            <img src="image-index/header/icon-star.png" alt="icon-star" class="header1-star">
+            <img src="image-index/header/icon-map.png" alt="icon-map" class="header1-map">
+            <img src="image-index/header/img-view1.jpg" alt="view1" class="view1">
+            <img src="image-index/header/img-view2.jpg" alt="view2" class="view2">
+            <img src="image-index/header/img-view3.jpg" alt="view3" class="view3">
+            <img src="image-index/header/img-view4.jpg" alt="view4" class="view4">
           </div>
-          <div class="product-main">
+          <div class="header1-img">
+            <img src="image-index/header/img-transparent.png" alt="img-transparent">
+          </div>
+          <div class="header1-title">
+            <div class="header1-title-content">
+              <p>讓旅行更輕鬆<br>&emsp;讓世界更近！</p>
+            </div>
+            <div class="header1-button">
+              <button class="btn-dark"><img src="image-index/header/icon-TW.png" alt="TW"></button>
+              <button class="btn"><img src="image-index/header/icon-World.png" alt="World"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header1-scroll-down">
+          <p>開始旅行</p>
+        </div>
+        <button><img src="image-index/header/icon-down.png" alt="arrow-down"></button>
+      </div>
+      <div class="nav">
+        <div class="nav-main">
+          <img class="nav-brand" src="image-index/img-brand.png" alt="TripEasy-footer-brand">
+          <div class="searchbar">
+          <input type="text" class="search-bar" placeholder="今天要去哪裡呢？">
+          <button class="search-button"><img src="image-index/nav/icon-search.png" alt="icon-search"></button>
+        </div>          
+        <div class="language-exchange">
+          <button>中</button>
+          <button>英</button>
+        </div>
+        </div>
+        <div class="nav-menu-main">
+          <ul class="nav-menu">
+            <li>購物專區</li>
+            <li>旅遊神器</li>
+            <li>行事曆</li>
+            <li>購物車</li>
+          </ul>
+          <button class="login-botton">註冊/登入</button>
+        </div>
+
+      </div>
+      <div class="content">
+        <h2>矚目功能</h2>
+          <div class="introduce-main">
+            <div class="introduce-item">
+              <h3>旅遊探索和即時預訂</h3>
+              <img src="image-index/section1/img-map.png" alt="introduce-map">
+              <p>想去世界的某個角落？我們提供精選旅遊行程，依據地點、價格、興趣快速篩選，發掘當地隱藏玩法！即將開賣的行程不再錯過，還能及時掌握優惠</p>
+            </div>
+            <div class="introduce-item">
+              <h3>個人化會員體驗</h3>
+              <img src="image-index/section1/img-vip.png" alt="introduce-vip">
+              <p>註冊成為會員，追蹤旅遊積分、VIP等級，累積專屬優惠！收藏你感興趣的旅程，設定價格追蹤，當行程降價或有新優惠，我們及時通知，讓你的旅行更划算、更自由！</p>
+            </div>
+            <div class="introduce-item">
+              <h3>安心支付</h3>
+              <img src="image-index/section1/img-pay.png" alt="introduce-pay">
+              <p>選擇你的旅遊項目，透過信用卡、Apple Pay、Google Pay等安全支付結帳，支援促銷折扣與點數兌換！</p>
+            </div>
+          </div>
+        <h2>購物專區</h2>
+          <div class="shopping-main">
+            <div class="shopping-content">
+              <div class="title-main">
+                <button>旅行團</button>
+                <button>背包客</button>
+               </div>
+              <div class="product-main">
                 <button>飯店專區</button>
                 <button>美食專區</button>
                 <button>旅程專區</button>
@@ -139,53 +147,37 @@
                     <button><img src="image-index/section2/icon-left.png" alt="button-left" class="right"></button>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="shopping-img">
+              <img src="image-index/section2/img-shopping view1.png" alt="高雄承億酒店的圖片">
+              <img src="image-index/section2/icon-map.png" alt="icon-map" class="icon-map">
+              <img src="image-index/section2/icon-cloud.png" alt="icon-cloud" class="icon-cloud">
+              <button>查看更多</button>
+          </div>  
+            </div>
+        <h2>旅遊神器</h2>
+          <div class="feature-main">
+            <div class="feature-left">
+              <img src="image-index/section3/img-rain.png" alt="rainyday">
+              <div class="feature-middle">
+                <button class="weather">天氣查詢</button>
+                <button class="rate">匯率查詢</button>
+                <button class="rent">機票/租車<br>查詢</button>
+                <button class="maps">互動地圖</button>
+                <button class="culture">文化介紹</button>
+              </div>
+              <div class="circle">
+                
+              </div>
+            </div>
+            <div class="feature-right">
+              隨時查詢即時天氣，提<br>供溫度、降雨與風速資<br>訊，讓你安心出門
+            </div>
           </div>
-        </div>
-        <div class="shopping-img">
-          <img src="image-index/section2/img-shopping view1.png" alt="高雄承億酒店的圖片">
-          <img src="image-index/section2/icon-map.png" alt="icon-map" class="icon-map">
-          <img src="image-index/section2/icon-cloud.png" alt="icon-cloud" class="icon-cloud">
-          <button>查看更多</button>
-        </div>  
-    </div>
-    <div class="centralize">
-      <span class="next-section" onclick="scrollToSection('appliance')"><img src="image-index/header/icon-down.png" alt="arrow-down"></span>
-    </div>
-  </section>
-
-  <!-- 旅遊神器 -->
-  <section id="appliance" class="sections">
-    <h2>旅遊神器</h2>
-    <div class="appliance-wrap">
-      <img class="shopping-img"   src="image-index/section3/img-rain.png" alt="">
-      <div class="appliance-switch">
-        <button class="weather">天氣查詢</button>
-        <button class="rate">匯率查詢</button>
-        <button class="rent">機票/租車查詢</button>
-        <button class="map">互動地圖</button>
-        <button class="culture">文化介紹</button>
-      </div>
-      <div class="appliance-content">
-          <img class="mountain"   src="image-index/section3/icon-mountain.png" alt="">
-          <img class="star"  src="image-index/section3/icon-star.png" alt="">
-          <div class="more-btn">
-            <p>隨時查詢即時天氣，提供溫度、降雨與風速資訊，讓你安心出門</p>
-            <button>開始體驗</button>
-            <img src="image-index/section3/icon-right.png" alt="">
-          </div> 
-      </div>
-    </div>
- 
-    <div class="centralize">
-      <span class="next-section" onclick="scrollToSection('recommend')"><img src="image-index/header/icon-down.png" alt="arrow-down"></span>
-    </div>
-  </section>
-
-  <!-- 好評專區 -->
-  <section id="recommend" class="sections">
-    <h2>好評專區</h2>
-    <div class="recommend-main">
-      <div class="recommend-list">
+        <h2>好評專區</h2>
+          <div class="recommend-main">
+            <div class="recommend-list">
               <img src="image-index/section4/icon-arrow-left.png" alt="icon-arrow-left" class="arrow-left">
               <img src="image-index/section4/icon-arrow-left.png" alt="icon-arrow-right" class="arrow-right">
               <div class="recommend-item">
@@ -272,64 +264,70 @@
                   <p class="p4">身為資深背包客，真的非常推薦這個平台！安排購買行程一次到位，讓出去玩更能輕鬆自在</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      <div class="footer">
+        <div class="footer-wrap">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="logo-main">
+                        <img src="image-index/img-brand.png" alt="TripEasy-footer-brand">
+                        <ul>
+                            <li>公司地址：台北市中山區忠孝東路二段211號</li>
+                            <li>電話：02-1234-5678</li>
+                            <li>公司統編：12345678</li>
+                        </ul>
+                    </div>
+                    <div class="link-main">
+                        <ul>
+                            <li class="name">公司資訊</li>
+                            <li class="details">關於我們</li>
+                        </ul>
+                        <ul>
+                            <li class="name">客戶服務</li>
+                            <li class="details">常見問題</li>
+                            <li class="details">旅遊回饋</li>
+                            <li class="details">退款政策</li>
+                        </ul>
+                        <ul>
+                            <li class="name">合作與業務</li>
+                            <li class="details">商務合作洽談</li>
+                            <li class="details">成為供應商</li>
+                        </ul>
+                        <ul>
+                            <li class="name">法律與條款</li>
+                            <li class="details">隱私權政策</li>
+                            <li class="details">使用者提款</li>
+                            <li class="details">Cookie政策</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <ul class="social-main">
+                        <li>
+                           <img src="image-index/footer/icon-fb.png" alt="logo-fb"> 
+                        </li>
+                        <li>
+                            <img src="image-index/footer/icon-ig.png" alt="logo-ig">
+                        </li>
+                        <li>
+                            <img src="image-index/footer/icon-X.png" alt="logo-X">
+                        </li>
+                    </ul>
+                    <ul class="footer-content">
+                        <li>走走停停都是風景</li>
+                        <li>Even the pauses are beautiful.</li>
+                        <li>Every step, every pause...</li>
+                        <li>It's all part of the view.</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="copyright">
+                © Copyright 2025 TripEasy
+            </div>
       </div>
     </div>
-  </section>
-
-  <div class="footer">
-            <div class="container footer_container">
-                <div class="footer_left">
-                    <a href="#"><img src="image-index/img-brand.png" alt="TripEasy"></a>
-                    <ul class="contact_item">
-                        <li>公司地址：台北市中山區忠孝東路二段211號</li>
-                        <li>電話：02-1234-5678</li>
-                        <li>公司統編：12345678</li>
-                    </ul>
-                    <p>© Copyright 2025 TripEasy</p>
-                </div>
-
-                <div class="footer_middle">
-                    <ul>
-                        <li><h4>公司資訊</h4></li>
-                        <li><a href="#">關於我們</a></li>
-                    </ul>
-                    <ul>
-                        <li><h4>客戶服務</h4></li>
-                        <li><a href="#">常見問題</a></li>
-                        <li><a href="#">旅遊回饋</a></li>
-                        <li><a href="#">退款政策</a></li>
-                    </ul>
-                    <ul>
-                        <li><h4>合作與業務</h4></li>
-                        <li><a href="#">商務合作洽談</a></li>
-                        <li><a href="#">成為供應商</a></li>
-                    </ul>
-                    <ul>
-                        <li><h4>法律與條款</h4></li>
-                        <li><a href="#">隱私權政策</a></li>
-                        <li><a href="#">使用者條款</a></li>
-                        <li><a href="#">Cookie 政策</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_right">
-                    <ul class="community_item">
-                        <li><a href="#"><img src="image-index/footer/icon-fb.png" alt="facebook"></a></li>
-                        <li><a href="#"><img src="image-index/footer/icon-ig.png" alt="instagram"></a></li>
-                        <li><a href="#"><img src="image-index/footer/icon-X.png" alt="x"></a></li>
-                    </ul>
-                    <p>走走停停都是風景 <br>
-                        Even the pauses are beautiful. <br>
-                        Every step, every pause— <br>
-                        it's all part of the view.</p>
-                </div>
-            </div>
   </div>
-  
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>

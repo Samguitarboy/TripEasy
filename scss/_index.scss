@@ -1,0 +1,165 @@
+
+// 背景
+.style {
+  max-width: 1920px;
+  background-image: url(image-index/img-background.jpg);
+}
+
+.header-main {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid gray;
+
+  @media (max-width: $tablet) {
+    border: 3px solid red;
+  }
+  @media (max-width: $mobile) {
+    border: 2px solid greenyellow;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+// nav
+.nav {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-main {
+    width: 553px;
+    gap: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-brand {
+    width: 138px;
+    height: 39px;
+  }
+  .searchbar {
+    width: 251px;
+    border-radius: $main-radius;
+    padding: 8px 20px;
+    gap: 48px;
+    color: $main-bg;
+    border: 1px solid $border-color;
+
+    input {
+      border: none;
+    }
+  }
+  .search-button {
+    width: 24px;
+    height: 24px;
+    border: none;
+  }
+  .language-exchange {
+    width: 92px;
+    height: 44px;
+    border-radius: $main-radius;
+    padding: 4px 8px;
+    gap: 4px;
+    background: $main-bg;
+    border: 1px solid $border-color;
+
+    button {
+      width: 36px;
+      height: 36px;
+      border-radius: 40px;
+      padding: 4px;
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 7%;
+      text-align: center;
+      color: #939393;
+    }
+  }
+  .nav-menu-main {
+    width: 640px;
+    gap: 28px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-menu {
+    display: flex;
+    width: 488px;
+    gap: 20px;
+
+    li {
+      width: 118px;
+      padding: 8px 10px;
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 10%;
+      color: $main-color;
+      text-align: center;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .login-botton {
+    min-width: 124px;
+    border-radius: $main-radius;
+    border: 2px solid $main-color;
+    padding: 12px 24px;
+    gap: 8px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 9%;
+    text-align: center;
+    color: $main-color;
+
+    &:hover {
+      background: $secondary;
+      color: #fff;
+    }
+  }
+}
+
+// 其他區塊請依此巢狀與變數方式繼續撰寫...
+
+// RWD 範例
+.content {
+  gap: 40px;
+  border: 2px solid black;
+  padding-top: 208px;
+  padding-bottom: 120px;
+
+  h2 {
+    display: inline;
+    font-family: $main-serif;
+    font-weight: 700;
+    border-bottom: 9px solid $primary;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 14%;
+  }
+
+  @media (max-width: $mobile) {
+    width: 375px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 33.6px;
+      letter-spacing: 13%;
+    }
+  }
+}
+
+// 以此類推，將其他區塊也依照 SCSS 巢狀與變數優化

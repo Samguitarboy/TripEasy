@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.style {
+  max-width: 1920px;
+  background-image: url(image-index/img-background.jpg);
+}
+
+.header-main {
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid gray;
+}
+@media (max-width: 992px) {
+  .header-main {
+    border: 3px solid red;
+  }
+}
+@media (max-width: 375px) {
+  .header-main {
+    border: 2px solid greenyellow;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.nav {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav-main {
+  width: 553px;
+  gap: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav-brand {
+  width: 138px;
+  height: 39px;
+}
+.nav .searchbar {
+  width: 251px;
+  border-radius: 100px;
+  padding: 8px 20px;
+  gap: 48px;
+  color: #F2F2F2;
+  border: 1px solid #D4D4D4;
+}
+.nav .searchbar input {
+  border: none;
+}
+.nav .search-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.nav .language-exchange {
+  width: 92px;
+  height: 44px;
+  border-radius: 100px;
+  padding: 4px 8px;
+  gap: 4px;
+  background: #F2F2F2;
+  border: 1px solid #D4D4D4;
+}
+.nav .language-exchange button {
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  padding: 4px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 7%;
+  text-align: center;
+  color: #939393;
+}
+.nav .nav-menu-main {
+  width: 640px;
+  gap: 28px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav .nav-menu {
+  display: flex;
+  width: 488px;
+  gap: 20px;
+}
+.nav .nav-menu li {
+  width: 118px;
+  padding: 8px 10px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 10%;
+  color: #5B5B5B;
+  text-align: center;
+}
+.nav .nav-menu li:hover {
+  color: #B1D6CA;
+}
+.nav .login-botton {
+  min-width: 124px;
+  border-radius: 100px;
+  border: 2px solid #5B5B5B;
+  padding: 12px 24px;
+  gap: 8px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 9%;
+  text-align: center;
+  color: #5B5B5B;
+}
+.nav .login-botton:hover {
+  background: #333333;
+  color: #fff;
+}
+
+.content {
+  gap: 40px;
+  border: 2px solid black;
+  padding-top: 208px;
+  padding-bottom: 120px;
+}
+.content h2 {
+  display: inline;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 700;
+  border-bottom: 9px solid #B1D6CA;
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 14%;
+}
+@media (max-width: 375px) {
+  .content {
+    width: 375px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .content h2 {
+    font-size: 28px;
+    line-height: 33.6px;
+    letter-spacing: 13%;
+  }
+}
