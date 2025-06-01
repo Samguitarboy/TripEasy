@@ -1,10 +1,11 @@
-var myImage = document.querySelector('btn-TW');
+document.querySelector('.hover1').addEventListener('mouseenter', () => {
+  document.querySelector('#shopping').src = 'image-index/shopping/img-shopping view1.png';
+});
 
-myImage.onclick = function() {
-    let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/iphone13.jpg') {
-      myImage.setAttribute ('src','image-index/banner/icon-TW.png');
-    } else {
-      myImage.setAttribute ('src','images/iphone13-1.jpg');
-    }
-}
+document.querySelector('.hover2').addEventListener('mouseenter', () => {
+  document.querySelector('#shopping').src = 'image-index/shopping/img-shopping view2.png';
+});
+
+document.querySelector('.hover3').addEventListener('mouseenter', () => {
+  document.querySelector('#shopping').src = 'image-index/shopping/img-shopping view3.png';
+});
