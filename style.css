@@ -121,9 +121,7 @@ a{
 	top: 450px;
 	left: 0;
 }
-.world{
-	display: none;
-}
+
 .banner-img{
 	width: 60%;
 	height: auto;
@@ -181,8 +179,10 @@ a{
 	
 }
 .banner-button .btn-TW:hover{
-	background-image: url(image-index/banner/icon-TW.png);
 	background: #333333;
+	background-image: url(image-index/banner/icon-TW.png);
+	background-repeat: no-repeat;           /* 不重複 */
+    background-position: center;           /* 置中對齊 */
 }
 .banner-button .btn-world{
 	background: #F2F2F2;
@@ -194,7 +194,12 @@ a{
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
+.banner-button .btn-world:hover{
+	background: #333333;
+	background-image: url(image-index/banner/icon-World.png);
+	background-repeat: no-repeat;           /* 不重複 */
+    background-position: center;           /* 置中對齊 */
+}
 
 .banner-scroll-down{
 	width: 100%;
