@@ -2,7 +2,7 @@
   <div class="wrap">
     <!-- Header -->
     <HeaderComponent />
-
+        <Breadcrumb />
     <!-- Content -->
     <div class="content">
       <div class="container content_container">
@@ -11,8 +11,10 @@
           <p class="vertical-text">走吧!</p>
           <p class="vertical-text">讓每段旅程都有溫度</p>
         </div>
-        <div class="main_img"><img src="@/assets/img/login.webp" alt="login_img" /></div>
-
+        <div class="img_breadcrumb_wrapper">
+          <Breadcrumb class="breadcrumb-fixed" />
+          <div class="main_img"><img src="@/assets/img/login.webp" alt="login_img" /></div>
+        </div>
         <!-- 表單 -->
         <div class="main_form">
           <h2>會員登入</h2>
@@ -81,12 +83,13 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
+import Breadcrumb from '@/components/Breadcrumb.vue';
 import * as func from '@/utils/function.js';
 import * as api from '@/utils/api.js';
 
 export default {
   name: 'loginPage',
-  components: { HeaderComponent, FooterComponent },
+  components: { HeaderComponent,Breadcrumb,FooterComponent },
   data() {
     return {
       email: '',

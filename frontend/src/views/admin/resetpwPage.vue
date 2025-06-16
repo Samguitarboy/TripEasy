@@ -12,10 +12,12 @@
             <p class="vertical-text">讓每段旅程都有溫度</p>
           </div>
 
-          <div class="main_img">
-            <img src="@/assets/img/reset-password.webp" alt="reset_password_img" />
+          <div class="img_breadcrumb_wrapper">
+            <Breadcrumb class="breadcrumb-fixed" />
+            <div class="main_img">
+              <img src="@/assets/img/reset-password.webp" alt="reset_password_img" />
+            </div>
           </div>
-
           <div class="main_form">
             <h2>修改密碼</h2>
             <div class="form">
