@@ -1,0 +1,1 @@
+import{_ as s,c as o,a as t,o as a}from"./index-BgOumlI3.js";const c={},r={class:"about"};function n(_,e){return a(),o("div",r,e[0]||(e[0]=[t("h1",null,"這是搜索頁面",-1)]))}const d=s(c,[["render",n]]);export{d as default};
