@@ -29,12 +29,6 @@ const router = createRouter({
           component: () => import('../views/HomeView.vue'),
           meta: { breadcrumb: '首頁' },
         },
-        // {
-        //   path: 'shopping',
-        //   name: 'shopping',
-        //   component: () => import('../views/front/shopping.vue'),
-        //   meta: { breadcrumb: '購物專區' },
-        // },
         {
           path: 'search',
           name: 'search',
@@ -135,6 +129,12 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: { breadcrumb: '關於我們' },
+    },
+    {
+      path: '/shopping',
+      name: 'shopping',
+      component: () => import('../views/front/shopping.vue'),
+      meta: { breadcrumb: '購物專區' },
     },
   ],
 })
