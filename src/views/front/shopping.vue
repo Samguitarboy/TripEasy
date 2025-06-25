@@ -44,9 +44,9 @@
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
 import Breadcrumb from '@/components/Breadcrumb.vue';
-import SidebarFilters from '@/Components/SidebarFilters.vue';
-import TopFilter from '@/Components/TopFilter.vue';
-import ProductList from '@/Components/ProductList.vue';
+import SidebarFilters from '@/components/SidebarFilters.vue';
+import TopFilter from '@/components/TopFilter.vue';
+import ProductList from '@/components/ProductList.vue';
 import * as func from '@/utils/function.js';
 import * as api from '@/utils/api.js';
 
