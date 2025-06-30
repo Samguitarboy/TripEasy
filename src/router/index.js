@@ -175,6 +175,15 @@ const router = createRouter({
       meta: { breadcrumb: '購物專區' },
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // 若使用瀏覽器的返回/前進按鈕，保留原來的位置
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      // 否則捲動到最上面
+      return { top: 0 }
+    }
+  }
 });
 
 router.beforeEach(async (to, from, next) => {
