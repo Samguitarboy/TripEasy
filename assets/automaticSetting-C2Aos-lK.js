@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,a as s,o as a}from"./index-CHSv0YoW.js";const r={},c={class:"about"};function n(_,t){return a(),o("div",c,t[0]||(t[0]=[s("h1",null,"這是自動化服務設定頁面",-1)]))}const l=e(r,[["render",n]]);export{l as default};

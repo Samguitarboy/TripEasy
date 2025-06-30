@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as t,a as r,o as s}from"./index-CHSv0YoW.js";const n={},a={class:"about"};function c(_,e){return s(),t("div",a,e[0]||(e[0]=[r("h1",null,"這是權限設定(人員管理？)頁面",-1)]))}const i=o(n,[["render",c]]);export{i as default};
