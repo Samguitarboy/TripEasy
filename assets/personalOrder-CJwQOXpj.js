@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as r,a as s,o as t}from"./index-pdZddJkE.js";const a={},n={class:"about"};function c(_,e){return t(),r("div",n,e[0]||(e[0]=[s("h1",null,"這是個人訂單頁面",-1)]))}const f=o(a,[["render",c]]);export{f as default};
