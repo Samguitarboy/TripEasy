@@ -327,7 +327,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '探索冒險',
     tag2: '自然療癒',
-    img: 'src/assets/img/search/view1.png',
+    img: '@/assets/img/search/view1.png',
     isFavorite: false,
   },
   {
@@ -339,7 +339,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '懶人輕鬆',
     tag2: '自然療癒',
-    img: 'src/assets/img/search/view2.jpg',
+    img: '@/assets/img/search/view2.jpg',
     isFavorite: false,
   },
   {
@@ -351,7 +351,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '文化體驗',
     tag2: '自然療癒',
-    img: 'src/assets/img/search/view3.jpg',
+    img: '@/assets/img/search/view3.jpg',
     isFavorite: false,
   },
   {
@@ -363,7 +363,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '都市感官',
     tag2: '拍照打卡',
-    img: 'src/assets/img/search/view4.jpg',
+    img: '@/assets/img/search/view4.jpg',
     isFavorite: false,
   },
   {
@@ -375,7 +375,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '探索冒險',
     tag2: '自然療癒',
-    img: 'src/assets/img/search/view5.jpg',
+    img: '@/assets/img/search/view5.jpg',
     isFavorite: false,
   },
   {
@@ -387,7 +387,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '探索冒險',
     tag2: '自然療癒',
-    img: 'src/assets/img/search/view6.jpg',
+    img: '@/assets/img/search/view6.jpg',
     isFavorite: false,
   },
 ]);
