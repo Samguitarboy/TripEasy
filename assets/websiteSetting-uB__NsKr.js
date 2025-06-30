@@ -1,1 +1,0 @@
-import{_ as t,c as s,b as o,o as n}from"./index-BFa3nxHJ.js";const c={},r={class:"about"};function a(_,e){return n(),s("div",r,e[0]||(e[0]=[o("h1",null,"這是網站管理頁面",-1)]))}const l=t(c,[["render",a]]);export{l as default};
