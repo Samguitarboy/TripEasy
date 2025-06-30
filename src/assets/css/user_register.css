@@ -49,20 +49,6 @@
   margin: 0 7.5rem 0 1.25rem;
 }
 
-.img_breadcrumb_wrapper {
-  position: relative;
-  width: fit-content;
-  gap: 5px;
-}
-
-.breadcrumb-fixed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 0 16px;
-}
-
 /* --- 表單 --- */
 .main_form h2 {
   font-size: 2rem;

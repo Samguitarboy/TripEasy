@@ -2,7 +2,7 @@
   <nav class="breadcrumb">
     <router-link v-for="(item, index) in breadcrumbs" :key="index" :to="item.path">
       {{ item.label }}
-      <span v-if="index < breadcrumbs.length - 1">  <span style="color: grey;">></span>  </span>
+      <span v-if="index < breadcrumbs.length - 1">  <span style="color: grey;">/</span>  </span>
     </router-link>
   </nav>
 </template>

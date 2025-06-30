@@ -2,10 +2,10 @@
   <div class="wrap">
     <!-- Header -->
     <HeaderComponent />
- 
-    <div class="container my-5">
+
+    <!-- Main Content -->
+   <div class="container my-5">
       <div class="row">
-        <Breadcrumb style="margin-top: 70px; padding-left: 15px;" />
         <!-- 左側欄 -->
         <div class="col-md-3">
           <div class="input-group mb-3">
@@ -82,7 +82,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- Footer -->
     <FooterComponent />
   </div>
@@ -91,17 +91,12 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
-import Breadcrumb from '@/components/Breadcrumb.vue';
 import * as func from '@/utils/function.js';
 import * as api from '@/utils/api.js';
 
 export default {
   name: 'serviceSetting',
-  components: {
-    HeaderComponent,
-    FooterComponent,
-    Breadcrumb,
-  },
+  components: { HeaderComponent, FooterComponent },
   data() {
     return {
       search: '',
@@ -135,6 +130,8 @@ export default {
         ]          
       },
       userQuestion: '',
+
+
       errorMsg: '',
     };
   },
@@ -148,6 +145,7 @@ export default {
       );
     }
   },
+
   methods: {
     toggle(index) {
       this.activeIndex = this.activeIndex === index ? null : index
@@ -168,14 +166,16 @@ export default {
       console.log('使用者問題：', cleanInput);
       alert('問題已送出，我們會盡快回覆您');
       this.userQuestion = '';
-    }
-  }
+    } 
+  },
 };
 </script>
 
 <style scoped>
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css');
-@import '@/assets/css/user_register.css';
+/* @import '@/assets/css/user_register.css'; */
+
+
 
 .accordion-button::after {
   display: none !important;
@@ -184,5 +184,11 @@ export default {
 .accordion-button .toggle-icon {
   font-weight: bold;
   font-size: 1.25rem;
+/* @media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  } */
 }
 </style>

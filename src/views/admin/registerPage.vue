@@ -10,12 +10,11 @@
           <p class="vertical-text">走吧!</p>
           <p class="vertical-text">讓每段旅程都有溫度</p>
         </div>
-        <div class="img_breadcrumb_wrapper">
-          <Breadcrumb class="breadcrumb-fixed" />
-          <div class="main_img">
-            <img src="@/assets/img/register.webp" alt="register_img" />
-          </div>
+
+        <div class="main_img">
+          <img src="@/assets/img/register.webp" alt="register_img" />
         </div>
+
         <div class="main_form">
           <h2>會員註冊</h2>
           <div class="form">
@@ -91,13 +90,12 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
-import Breadcrumb from '@/components/Breadcrumb.vue';
 import * as func from '@/utils/function.js';
 import * as api from '@/utils/api.js';
 
 export default {
   name: 'registerPage',
-  components: { HeaderComponent,Breadcrumb, FooterComponent },
+  components: { HeaderComponent, FooterComponent },
   data() {
     return {
       name: '',

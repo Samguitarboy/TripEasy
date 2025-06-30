@@ -10,12 +10,11 @@
           <p class="vertical-text">走吧!</p>
           <p class="vertical-text">讓每段旅程都有溫度</p>
         </div>
-        <div class="img_breadcrumb_wrapper">
-          <Breadcrumb class="breadcrumb-fixed" />
-          <div class="main_img">
-            <img src="@/assets/img/forgot-password.webp" alt="forgot_password_img" />
-          </div>
+
+        <div class="main_img">
+          <img src="@/assets/img/forgot-password.webp" alt="forgot_password_img" />
         </div>
+
         <div class="main_form">
           <h2>忘記密碼</h2>
           <div class="form">
@@ -44,13 +43,12 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
-import Breadcrumb from '@/components/Breadcrumb.vue';
 import * as func from '@/utils/function.js';
 import * as api from '@/utils/api.js';
 
 export default {
   name: 'forgotpwPage',
-  components: { HeaderComponent,Breadcrumb, FooterComponent },
+  components: { HeaderComponent, FooterComponent },
   data() {
     return {
       email: '',
