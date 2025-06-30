@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as t,a as s,o as c}from"./index-DooPAxL5.js";const r={},a={class:"about"};function n(l,e){return c(),t("div",a,e[0]||(e[0]=[s("h1",null,"這是個人收藏頁面",-1)]))}const d=o(r,[["render",n]]);export{d as default};
