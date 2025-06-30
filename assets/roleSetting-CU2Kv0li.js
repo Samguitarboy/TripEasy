@@ -1,1 +1,0 @@
-import{_ as t,c as o,b as s,o as n}from"./index-yEyuV_pK.js";const r={},c={class:"about"};function a(_,e){return n(),o("div",c,e[0]||(e[0]=[s("h1",null,"這是權限設定(人員管理？)頁面",-1)]))}const d=t(r,[["render",a]]);export{d as default};
