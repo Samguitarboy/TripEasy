@@ -1,1 +1,0 @@
-import{_ as t}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,a as s,o as r}from"./index-DnU9NgPv.js";const n={},a={class:"about"};function c(_,e){return r(),o("div",a,e[0]||(e[0]=[s("h1",null,"這是網站管理頁面",-1)]))}const l=t(n,[["render",c]]);export{l as default};
