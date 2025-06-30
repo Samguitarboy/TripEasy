@@ -1,0 +1,1 @@
+import{_ as o,c as s,b as r,o as t}from"./index-Dut9Z924.js";const n={},a={class:"about"};function c(_,e){return t(),s("div",a,e[0]||(e[0]=[r("h1",null,"這是個人訂單頁面",-1)]))}const d=o(n,[["render",c]]);export{d as default};
