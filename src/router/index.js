@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
 import * as api from '../utils/api';
 import { userStore } from '../stores/userStore';
 
@@ -19,6 +20,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
+      component: HomeView,
       meta: { breadcrumb: '首頁' },
       children: [
         //首頁
@@ -46,12 +48,12 @@ const router = createRouter({
         },
 
         //搜索頁面
-        {
+        /*{
           path: 'search',
           name: 'search',
           component: () => import('../views/front/searchPage.vue'),
           meta: { breadcrumb: '購物專區' },
-        },
+        },*/
       ],
     },
     //會員功能
@@ -164,6 +166,13 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
       meta: { breadcrumb: '關於我們' },
+    },
+    //搜索頁面
+    {
+      path: '/search',
+      name: 'search',
+      component: () => import('../views/front/searchPage.vue'),
+      meta: { breadcrumb: '購物專區' },
     },
   ],
 });
