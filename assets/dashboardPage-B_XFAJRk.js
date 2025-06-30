@@ -1,0 +1,1 @@
+import{_ as o,c as s,b as t,o as a}from"./index-CBCIe7qk.js";const r={},c={class:"about"};function n(_,e){return a(),s("div",c,e[0]||(e[0]=[t("h1",null,"這是儀表板分析頁面",-1)]))}const l=o(r,[["render",n]]);export{l as default};
