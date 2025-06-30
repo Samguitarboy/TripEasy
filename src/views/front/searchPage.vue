@@ -32,7 +32,7 @@
       <!-- 搜尋區 -->
       <div class="bg-white py-4">
         <div class="container">
-    
+
           <!-- 分類 -->
           <div class="row g-3 align-items-end mb-3">
             <div class="col-6 col-md-3">
@@ -57,7 +57,7 @@
                 </select>
               </div>
             </div>
-            
+
             <!-- 偏好分類 -->
             <div class="col-6 col-md-3">
               <div class="d-flex align-items-center">
@@ -111,7 +111,7 @@
                 </select>
               </div>
             </div>
-          </div>  
+          </div>
 
             <!-- 金額 -->
           <div class="row g-3 align-items-end mb-3">
@@ -123,7 +123,7 @@
                 <input type="text" class="form-control" placeholder="最大金額"  style="width:180px;"/>
               </div>
             </div>
-          </div> 
+          </div>
 
           <!-- 旅遊日期 + 旅遊天數：同一列 -->
           <div class="row g-3 align-items-end mb-3">
@@ -193,7 +193,7 @@
           </div>
         </div>
       </div>
- 
+
       <!-- 排序與每頁顯示數量控制列 -->
       <div class="container d-flex justify-content-between align-items-center my-3">
           <!-- 每頁顯示筆數選單 -->
@@ -212,11 +212,11 @@
               <option value="desc">金額降序 ▼</option>
             </select>
           </div>
-        </div>  
+        </div>
       <!-- 商品清單區 -->
     <div class="container my-5">
         <div class="row gy-4">
-          <div class="col-12" v-for="(item, index) in paginatedItems" :key="item.id">
+          <div class="col-12" v-for="(item) in paginatedItems" :key="item.id">
             <div class="d-flex bg-white rounded shadow-sm overflow-hidden">
 
               <!-- 圖片 -->
@@ -224,7 +224,7 @@
 
               <!-- 內容 -->
               <div class="p-3 flex-grow-1">
-                
+
                   <!-- 標籤 -->
                   <div>
                     <span v-if="item.tag1" class="badge bg-warning text-dark me-1">{{ item.tag1 }}</span>
@@ -232,7 +232,7 @@
                     <span v-if="item.tag3" class="badge bg-danger text-white">{{ item.tag3 }}</span>
                   </div>
 
-                <!-- 主內容區塊：左側(title/desc) + 右側(日期/價格/按鈕) -->  
+                <!-- 主內容區塊：左側(title/desc) + 右側(日期/價格/按鈕) -->
                 <div class="d-flex">
                   <!-- 左側：title + 收藏 + desc -->
                   <div class="flex-grow-1">
@@ -250,7 +250,7 @@
                     </div>
                     <p class="mb-2 small text-start">{{ item.desc }}</p>
                   </div>
-                  
+
                   <!-- 右側：日期/價格/按鈕 -->
                   <div class="text-end ms-3" style="min-width: 210px;">
                     <div>{{ item.date }}</div>
@@ -303,6 +303,13 @@
 import FooterComponent from '@/components/FooterComponent.vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import Breadcrumb from '@/components/Breadcrumb.vue';
+import view1 from '@/assets/img/search/view1.png';
+import view2 from '@/assets/img/search/view2.jpg';
+import view3 from '@/assets/img/search/view3.jpg';
+import view4 from '@/assets/img/search/view4.jpg';
+import view5 from '@/assets/img/search/view5.jpg';
+import view6 from '@/assets/img/search/view6.jpg';
+
 import { reactive, computed, ref } from 'vue';
 
 const filters = reactive({
@@ -327,7 +334,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '探索冒險',
     tag2: '自然療癒',
-    img: '@/assets/img/search/view1.png',
+    img: view1,
     isFavorite: false,
   },
   {
@@ -339,7 +346,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '懶人輕鬆',
     tag2: '自然療癒',
-    img: '@/assets/img/search/view2.jpg',
+    img: view2,
     isFavorite: false,
   },
   {
@@ -351,7 +358,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '文化體驗',
     tag2: '自然療癒',
-    img: '@/assets/img/search/view3.jpg',
+    img: view3,
     isFavorite: false,
   },
   {
@@ -363,7 +370,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '都市感官',
     tag2: '拍照打卡',
-    img: '@/assets/img/search/view4.jpg',
+    img: view4,
     isFavorite: false,
   },
   {
@@ -375,7 +382,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '探索冒險',
     tag2: '自然療癒',
-    img: '@/assets/img/search/view5.jpg',
+    img: view5,
     isFavorite: false,
   },
   {
@@ -387,7 +394,7 @@ const allItems = ref([
     date: '2025.04.10 ~ 2025.04.12',
     tag1: '探索冒險',
     tag2: '自然療癒',
-    img: '@/assets/img/search/view6.jpg',
+    img: view6,
     isFavorite: false,
   },
 ]);
